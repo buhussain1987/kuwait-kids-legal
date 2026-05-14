@@ -1,0 +1,2745 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الشروط والأحكام — كويت كيدز 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+
+:root {
+  --navy: #0F1B3D;
+  --navy-light: #1E2A50;
+  --navy-deep: #0A1230;
+  --gold: #C9A961;
+  --gold-bright: #D4B872;
+  --gold-soft: #E5D4A1;
+  --gold-pale: #F5EDD8;
+  --ivory: #FAF7F0;
+  --ivory-warm: #F5F0E5;
+  --charcoal: #1A202C;
+  --gray: #4A5568;
+  --gray-light: #A0AEC0;
+  --line: rgba(201, 169, 97, 0.25);
+  --red: #C53030;
+  --red-soft: #FED7D7;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  font-family: 'Tajawal', 'Cairo', sans-serif;
+  color: var(--charcoal);
+  background: var(--ivory);
+  direction: rtl;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  font-size: 10pt;
+  line-height: 1.7;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  background: var(--ivory);
+  page-break-after: always;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.page:last-child { page-break-after: auto; }
+
+.page-header {
+  height: 16mm;
+  padding: 7mm 18mm 0 18mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.page-header .brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.page-header .brand img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.page-header .brand-text {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 9pt;
+  color: var(--navy);
+}
+.page-header .meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 8pt;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.page-content {
+  flex: 1;
+  padding: 8mm 18mm 5mm 18mm;
+  overflow: hidden;
+}
+
+.page-footer {
+  height: 12mm;
+  padding: 0 18mm 7mm 18mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  font-family: 'Inter', sans-serif;
+  font-size: 7.5pt;
+  color: var(--gray);
+  flex-shrink: 0;
+}
+.page-footer .page-num {
+  font-weight: 600;
+  color: var(--navy);
+}
+.page-footer .page-num span { color: var(--gold); }
+
+/* === COVER === */
+.cover {
+  background: var(--navy);
+  color: var(--ivory);
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: 18mm;
+  border: 1px solid var(--gold);
+  pointer-events: none;
+}
+.cover::after {
+  content: '';
+  position: absolute;
+  inset: 20mm;
+  border: 1px solid rgba(201, 169, 97, 0.3);
+  pointer-events: none;
+}
+.cover-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35mm 25mm;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.cover-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  letter-spacing: 6px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 8mm;
+}
+.cover-divider {
+  width: 60mm;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+.cover-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  padding: 6px;
+  margin: 12mm auto 8mm auto;
+  background: var(--navy-deep);
+}
+.cover-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.cover-title-en {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14pt;
+  color: var(--gold-soft);
+  letter-spacing: 2px;
+  margin-bottom: 4mm;
+  font-weight: 400;
+}
+.cover-title {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+  font-size: 30pt;
+  color: var(--gold);
+  line-height: 1.2;
+  margin-bottom: 5mm;
+}
+.cover-subtitle {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  color: var(--ivory);
+  line-height: 1.7;
+  max-width: 130mm;
+}
+.cover-meta-box {
+  margin-top: 14mm;
+  padding: 5mm 8mm;
+  border: 1px solid var(--gold);
+  display: inline-block;
+  text-align: center;
+}
+.cover-meta-row {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  color: var(--gold-soft);
+  letter-spacing: 2px;
+  margin: 1.5mm 0;
+}
+.cover-meta-row strong { color: var(--gold); }
+
+.cover-bottom {
+  margin-top: auto;
+  padding-top: 10mm;
+}
+.cover-version {
+  font-family: 'Inter', sans-serif;
+  font-size: 8pt;
+  color: var(--gold-soft);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* === TOC === */
+.toc-list {
+  list-style: none;
+  margin-top: 4mm;
+  font-size: 9.5pt;
+}
+.toc-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.8mm 0;
+  border-bottom: 1px dotted var(--line);
+  font-family: 'Tajawal', sans-serif;
+}
+.toc-list li.protection { background: var(--gold-pale); padding: 1.8mm 4mm; border-radius: 1mm; margin: 1mm 0; }
+.toc-num {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 10pt;
+  min-width: 14mm;
+}
+.toc-name {
+  flex: 1;
+  margin: 0 4mm;
+  color: var(--charcoal);
+  font-weight: 500;
+}
+.toc-list li.protection .toc-name { font-weight: 700; color: var(--navy); }
+.toc-page {
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
+  font-weight: 600;
+}
+.toc-section {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 10pt;
+  color: var(--navy);
+  margin: 4mm 0 2mm 0;
+  padding-bottom: 1.5mm;
+  border-bottom: 1.5px solid var(--gold);
+}
+
+/* === SECTION HEADINGS === */
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 8pt;
+  letter-spacing: 4px;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 3mm;
+}
+.section-title {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+  font-size: 22pt;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 3mm;
+}
+.gold-rule {
+  width: 40mm;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold) 0%, transparent 100%);
+  margin-bottom: 5mm;
+}
+.gold-rule.center { margin: 0 auto 6mm auto; background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%); }
+
+/* === CLAUSE BLOCKS === */
+.clause {
+  margin-bottom: 4.5mm;
+}
+.clause-header {
+  display: flex;
+  align-items: baseline;
+  gap: 4mm;
+  margin-bottom: 2.5mm;
+  padding-bottom: 1.5mm;
+  border-bottom: 1px solid var(--gold);
+}
+.clause-header.protection {
+  border-bottom: 2px solid var(--gold);
+  background: linear-gradient(90deg, var(--gold-pale) 0%, transparent 100%);
+  padding: 1.5mm 3mm;
+  border-radius: 1mm;
+  margin: 0 -3mm 2.5mm -3mm;
+}
+.clause-num {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 24pt;
+  color: var(--gold);
+  line-height: 1;
+}
+.clause-title {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+  font-size: 13pt;
+  color: var(--navy);
+  flex: 1;
+}
+.clause-title-en {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 9pt;
+  color: var(--gold);
+  display: block;
+  font-weight: 400;
+  margin-top: 0.5mm;
+}
+.protection-badge {
+  background: var(--navy);
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 7pt;
+  letter-spacing: 1.5px;
+  padding: 1mm 2.5mm;
+  border-radius: 1mm;
+  font-weight: 600;
+}
+.clause-body {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.85;
+  color: var(--charcoal);
+  text-align: justify;
+}
+.clause-body p { margin-bottom: 2mm; }
+.clause-body strong { color: var(--navy); font-weight: 700; }
+
+.sub-clause {
+  margin: 2mm 0;
+  padding: 2.5mm 4mm;
+  background: var(--ivory-warm);
+  border-right: 3px solid var(--gold);
+}
+.sub-clause-title {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 10pt;
+  color: var(--navy);
+  margin-bottom: 1mm;
+}
+.sub-clause-body {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.8;
+  color: var(--charcoal);
+}
+.sub-clause-body strong { color: var(--navy); font-weight: 700; }
+
+ul.clean-list {
+  list-style: none;
+  margin: 1.5mm 0;
+}
+ul.clean-list li {
+  position: relative;
+  padding-right: 5mm;
+  margin: 1mm 0;
+  font-size: 9.5pt;
+  line-height: 1.7;
+}
+ul.clean-list li::before {
+  content: '◆';
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--gold);
+  font-size: 7pt;
+}
+
+.intro-box {
+  background: linear-gradient(135deg, var(--gold-pale) 0%, var(--ivory-warm) 100%);
+  border: 1px solid var(--gold);
+  padding: 5mm 6mm;
+  margin: 4mm 0;
+  border-radius: 1mm;
+}
+.intro-box p {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.9;
+  color: var(--charcoal);
+  margin-bottom: 2mm;
+}
+.intro-box p:last-child { margin-bottom: 0; }
+.intro-box strong { color: var(--navy); }
+
+.warning-box {
+  background: var(--navy);
+  color: var(--ivory);
+  padding: 3mm 5mm;
+  border-right: 4px solid var(--gold);
+  margin: 3mm 0;
+  font-size: 9.5pt;
+}
+.warning-box strong { color: var(--gold); }
+
+.critical-box {
+  background: var(--red-soft);
+  border: 2px solid var(--red);
+  padding: 3mm 5mm;
+  border-right: 5px solid var(--red);
+  margin: 3mm 0;
+  font-size: 9.5pt;
+  border-radius: 1mm;
+}
+.critical-box strong { color: var(--red); }
+.critical-box .icon { font-size: 11pt; margin-left: 2mm; }
+
+.fine-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2mm 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 9.5pt;
+}
+.fine-table th {
+  background: var(--navy);
+  color: var(--ivory);
+  padding: 2mm 3mm;
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 9.5pt;
+}
+.fine-table td {
+  padding: 2mm 3mm;
+  border-bottom: 1px solid var(--line);
+  background: var(--ivory);
+}
+.fine-table td:first-child {
+  background: var(--ivory-warm);
+  font-weight: 600;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+/* === FINAL SIGNATURE PAGE === */
+.signature-page {
+  background: var(--navy);
+  color: var(--ivory);
+}
+.signature-page .page-header { border-bottom-color: rgba(201, 169, 97, 0.2); }
+.signature-page .page-header .brand-text { color: var(--ivory); }
+.signature-page .page-footer {
+  border-top-color: rgba(201, 169, 97, 0.2);
+  color: var(--gold-soft);
+}
+.signature-page .page-footer .page-num { color: var(--gold); }
+
+.signature-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12mm 25mm;
+  text-align: center;
+}
+.signature-content .eyebrow { color: var(--gold); }
+.signature-content .section-title { color: var(--gold); font-size: 26pt; margin-bottom: 4mm;}
+
+.commitment-list {
+  list-style: none;
+  margin: 6mm 0;
+  text-align: right;
+}
+.commitment-list li {
+  background: rgba(201, 169, 97, 0.08);
+  border-right: 3px solid var(--gold);
+  padding: 2.5mm 4mm;
+  margin-bottom: 1.5mm;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 10pt;
+  color: var(--ivory);
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+}
+.commitment-list .check {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 13pt;
+}
+
+.legal-stamp {
+  margin-top: 6mm;
+  padding: 5mm;
+  border: 2px solid var(--gold);
+  text-align: center;
+}
+.legal-stamp .name-ar {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+  font-size: 16pt;
+  color: var(--gold);
+}
+.legal-stamp .name-en {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 12pt;
+  color: var(--gold-soft);
+  margin: 1mm 0 3mm 0;
+}
+.legal-stamp .legal-line {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 9pt;
+  color: var(--gold-soft);
+  letter-spacing: 1px;
+  margin: 1mm 0;
+}
+.legal-stamp .legal-line strong { color: var(--gold); }
+
+.section-divider-page {
+  background: var(--navy);
+  color: var(--ivory);
+  position: relative;
+}
+.section-divider-page::before {
+  content: '';
+  position: absolute;
+  inset: 18mm;
+  border: 1px solid var(--gold);
+}
+.section-divider-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.section-divider-num {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 80pt;
+  color: var(--gold);
+  font-weight: 900;
+  line-height: 1;
+}
+.section-divider-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  letter-spacing: 6px;
+  color: var(--gold-soft);
+  text-transform: uppercase;
+  margin: 8mm 0 5mm 0;
+}
+.section-divider-title {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+  font-size: 24pt;
+  color: var(--gold);
+  margin-bottom: 4mm;
+}
+.section-divider-desc {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 11pt;
+  color: var(--ivory);
+  max-width: 130mm;
+  line-height: 1.7;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ========== COVER ========== -->
+<div class="page cover">
+  <div class="cover-inner">
+    <div>
+      <div class="cover-eyebrow">LEGAL DOCUMENT · 2026</div>
+      <div class="cover-divider"></div>
+
+      <div class="cover-logo">
+        <img src="assets/logo.png" alt="">
+      </div>
+
+      <div class="cover-title-en">Terms &amp; Conditions</div>
+      <div class="cover-title">الشروط والأحكام</div>
+      <div class="cover-subtitle">
+        اتفاقية انضمام المؤسسات إلى منصّة كويت كيدز<br>
+        — للمؤسسات والشركات الترفيهية والتعليمية —
+      </div>
+
+      <div class="cover-meta-box">
+        <div class="cover-meta-row">الإصدار: <strong>2.2</strong></div>
+        <div class="cover-meta-row">آخر تحديث: <strong>2026-05-14</strong></div>
+        <div class="cover-meta-row"><strong>31 بنداً + بند 4-A الموسّع</strong></div>
+      </div>
+    </div>
+
+    <div class="cover-bottom">
+      <div class="cover-divider"></div>
+      <div class="cover-version" style="margin-top: 5mm;">CONFIDENTIAL · BINDING DOCUMENT</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== TABLE OF CONTENTS ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CONTENTS · 02</div>
+  </div>
+
+  <div class="page-content">
+    <div class="eyebrow">جدول المحتويات</div>
+    <h1 class="section-title">فهرس البنود · 31 بنداً + بند 4-A الموسّع</h1>
+    <div class="gold-rule"></div>
+
+    <div class="toc-section">القسم الأول · التعريفات والالتزامات التشغيلية (1-18)</div>
+    <ul class="toc-list">
+      <li><span class="toc-num">01</span><span class="toc-name">التعريفات</span><span class="toc-page">04</span></li>
+      <li><span class="toc-num">02</span><span class="toc-name">الأهلية والتسجيل</span><span class="toc-page">04</span></li>
+      <li><span class="toc-num">03</span><span class="toc-name">الاشتراك — الباقات والرسوم</span><span class="toc-page">05</span></li>
+      <li><span class="toc-num">04</span><span class="toc-name">الأكواد — التزامات المؤسسة</span><span class="toc-page">06</span></li>
+      <li class="protection"><span class="toc-num">4-A</span><span class="toc-name">⭐ توفير التطبيق وتدريب الموظفين <strong>(جديد v2.2)</strong></span><span class="toc-page">07-09</span></li>
+      <li><span class="toc-num">05</span><span class="toc-name">العروض والمنشورات</span><span class="toc-page">10</span></li>
+      <li><span class="toc-num">06</span><span class="toc-name">التقييمات والتعليقات</span><span class="toc-page">11</span></li>
+      <li><span class="toc-num">07</span><span class="toc-name">التزامات الجودة والسلامة</span><span class="toc-page">12</span></li>
+      <li><span class="toc-num">08</span><span class="toc-name">السلوك والمحتوى المحظور</span><span class="toc-page">13</span></li>
+      <li><span class="toc-num">09</span><span class="toc-name">حماية بيانات العملاء</span><span class="toc-page">14</span></li>
+      <li><span class="toc-num">10</span><span class="toc-name">حقوق الملكية الفكرية</span><span class="toc-page">14</span></li>
+      <li><span class="toc-num">11</span><span class="toc-name">الإيقاف والإنهاء</span><span class="toc-page">15</span></li>
+      <li><span class="toc-num">12</span><span class="toc-name">السرية والمعلومات التجارية</span><span class="toc-page">16</span></li>
+      <li><span class="toc-num">13</span><span class="toc-name">حقوق الإدارة</span><span class="toc-page">16</span></li>
+      <li><span class="toc-num">14</span><span class="toc-name">الإعلانات والترويج</span><span class="toc-page">17</span></li>
+      <li><span class="toc-num">15</span><span class="toc-name">القوّة القاهرة</span><span class="toc-page">17</span></li>
+      <li><span class="toc-num">16</span><span class="toc-name">القانون الواجب التطبيق والاختصاص</span><span class="toc-page">18</span></li>
+      <li><span class="toc-num">17</span><span class="toc-name">التعديلات على الاتفاقية</span><span class="toc-page">18</span></li>
+      <li><span class="toc-num">18</span><span class="toc-name">التواصل الرسمي</span><span class="toc-page">18</span></li>
+    </ul>
+
+    <div class="toc-section">القسم الثاني · بنود الحماية القانونية (19-31) ⭐</div>
+    <ul class="toc-list">
+      <li class="protection"><span class="toc-num">19</span><span class="toc-name">حدّ المسؤولية المالية + التعويض بالتقدير المنفرد</span><span class="toc-page">20</span></li>
+      <li class="protection"><span class="toc-num">20</span><span class="toc-name">التعويض المتبادل من المؤسسة (Indemnification)</span><span class="toc-page">21</span></li>
+      <li class="protection"><span class="toc-num">21</span><span class="toc-name">تنصّل من الضمانات (Disclaimer of Warranties)</span><span class="toc-page">22</span></li>
+      <li class="protection"><span class="toc-num">22</span><span class="toc-name">توفّر الخدمة + الأمان + الاختراق + الصيانة</span><span class="toc-page">23</span></li>
+      <li class="protection"><span class="toc-num">23</span><span class="toc-name">الخدمات الخارجية (Third-Party Services)</span><span class="toc-page">24</span></li>
+      <li class="protection"><span class="toc-num">24</span><span class="toc-name">مسؤولية المؤسسة عن مستخدميها</span><span class="toc-page">24</span></li>
+      <li class="protection"><span class="toc-num">25</span><span class="toc-name">حماية الأطفال — البند الخاص</span><span class="toc-page">25</span></li>
+      <li class="protection"><span class="toc-num">26</span><span class="toc-name">التنازل عن الدعاوى الجماعية + التقادم</span><span class="toc-page">26</span></li>
+      <li class="protection"><span class="toc-num">27</span><span class="toc-name">علاقة العمل المستقلة</span><span class="toc-page">27</span></li>
+      <li class="protection"><span class="toc-num">28</span><span class="toc-name">البنود القانونية المعيارية</span><span class="toc-page">27</span></li>
+      <li class="protection"><span class="toc-num">29</span><span class="toc-name">مكافحة التشهير</span><span class="toc-page">28</span></li>
+      <li class="protection"><span class="toc-num">30</span><span class="toc-name">القابلية للنفاذ والإقرار النهائي</span><span class="toc-page">28</span></li>
+      <li class="protection"><span class="toc-num">31</span><span class="toc-name">المسؤولية الحصرية للمؤسسة عن عروضها + نموذج الكود</span><span class="toc-page">29</span></li>
+    </ul>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>02</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== INTRO PAGE ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">PREAMBLE · 03</div>
+  </div>
+
+  <div class="page-content">
+    <div class="eyebrow">المقدّمة</div>
+    <h1 class="section-title">اتفاقية الانضمام</h1>
+    <div class="gold-rule"></div>
+
+    <div class="intro-box">
+      <p>
+        ترحّب إدارة تطبيق <strong>"كويت كيدز" (Kuwait Kids)</strong> بانضمام مؤسستكم. هذه الاتفاقية تنظّم العلاقة بين الإدارة والمؤسسة المُسجَّلة في التطبيق (المُشار إليها بـ "المؤسسة").
+      </p>
+      <p>
+        بالتسجيل في التطبيق وقبول هذه الشروط، تُقرّ المؤسسة وممثّلها القانوني بالاطّلاع التامّ على البنود والالتزام بها بالكامل.
+      </p>
+    </div>
+
+    <div class="warning-box">
+      ⚠️ <strong>عدم الموافقة على أيّ بند يستوجب إيقاف التسجيل فوراً.</strong>
+    </div>
+
+    <div class="critical-box">
+      <span class="icon">⚖️</span> <strong>تنبيه قانوني هام:</strong> هذه الاتفاقية تتضمّن <strong>بنود حماية قانونية صارمة (البنود 19-31)</strong> تحدّد مسؤولية الإدارة وتنازل المؤسسة عن حقوق معيّنة. يُرجى قراءة هذه البنود بعناية فائقة قبل الموافقة، حيث تُعدّ <strong>ملزمة وقابلة للتنفيذ بشكل مطلق</strong>.
+    </div>
+
+    <p style="font-family: 'Tajawal', sans-serif; font-size: 10pt; line-height: 1.85; margin-top: 4mm; color: var(--charcoal); text-align: justify;">
+      تخضع هذه الاتفاقية لقوانين دولة الكويت، وتحديداً قانون التجارة الكويتي رقم 68 لسنة 1980، قانون الشركات التجارية رقم 1 لسنة 2016، قانون حماية المستهلك رقم 39 لسنة 2014، قانون مكافحة جرائم تقنية المعلومات رقم 63 لسنة 2015، وقانون المعاملات الإلكترونية رقم 20 لسنة 2014.
+    </p>
+
+    <p style="font-family: 'Tajawal', sans-serif; font-size: 10pt; line-height: 1.85; margin-top: 3mm; color: var(--charcoal); text-align: justify;">
+      أيّ نزاع ينشأ عن أو بمناسبة هذه الاتفاقية يكون من اختصاص <strong>محاكم الكويت الكلّية حصراً</strong>.
+    </p>
+
+    <div style="margin-top: 8mm; padding: 4mm; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: center;">
+      <div style="font-family: 'Cairo', sans-serif; font-weight: 700; color: var(--navy); margin-bottom: 1mm;">الإصدار 2.2 · 31 بنداً + بند 4-A الموسّع</div>
+      <div style="font-family: 'Tajawal', sans-serif; font-size: 9pt; color: var(--gray);">تاريخ آخر تحديث: 9 مايو 2026 · 13 بند حماية قانونية</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>03</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 1 + 2 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 01-02 · 04</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">01</div>
+        <div class="clause-title">التعريفات<span class="clause-title-en">Definitions</span></div>
+      </div>
+      <div class="clause-body">
+        <ul class="clean-list">
+          <li><strong>التطبيق / المنصّة:</strong> تطبيق "كويت كيدز" (Kuwait Kids) بنسخه الجوّالة وموقعه الإلكتروني.</li>
+          <li><strong>المؤسسة:</strong> الكيان التجاري المُرخَّص (حضانة، نادٍ رياضي، مركز معسكرات، أو ما في حكمها) المُسجَّل في التطبيق.</li>
+          <li><strong>الممثّل القانوني / مدير المؤسسة:</strong> الشخص الطبيعي المُخوَّل بالتسجيل في التطبيق نيابةً عن المؤسسة.</li>
+          <li><strong>العميل / شريك النجاح:</strong> ولي الأمر المُسجَّل في التطبيق.</li>
+          <li><strong>الكود:</strong> قسيمة رقمية يشتريها العميل بسعر 1 د.ك ويستخدمها في المؤسسة.</li>
+          <li><strong>الاشتراك:</strong> الرسم الشهري أو السنوي الذي تدفعه المؤسسة للظهور في التطبيق.</li>
+          <li><strong>الإدارة:</strong> الجهة المالكة والمُشغِّلة للتطبيق وممثّلها القانوني (مالك التطبيق).</li>
+          <li><strong>الأطراف الثالثة:</strong> مزوّدو الخدمات الخارجية (KNET، Twilio، Cloudinary، Railway، Firebase، إلخ).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">02</div>
+        <div class="clause-title">الأهلية والتسجيل<span class="clause-title-en">Eligibility &amp; Registration</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">2.1 الترخيص القانوني</div>
+        <div class="sub-clause-body">
+          يُشترط لتسجيل المؤسسة أن تكون <strong>مُرخَّصة قانونياً في دولة الكويت</strong> بترخيص ساري المفعول من الجهة المختصّة، وأن يكون نشاطها متوافقاً مع نشاط التطبيق، وألاّ تكون محظورة أو مُغلقة بقرار رسمي.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">2.2 رفع الترخيص</div>
+        <div class="sub-clause-body">
+          يلتزم الممثّل القانوني للمؤسسة برفع نسخة واضحة من الترخيص التجاري ضمن إعدادات المؤسسة في التطبيق، وضمان أنّه ساري المفعول، وتحديثه قبل انتهاء صلاحيته.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">2.3 المراجعة من الإدارة</div>
+        <div class="sub-clause-body">
+          <strong>يُمنع ظهور أي مؤسسة للعملاء قبل اعتماد ترخيصها.</strong> الإدارة تراجع الترخيص خلال 1-3 أيام عمل. في حال الرفض، يُرسل سبب الرفض ويحق للمؤسسة إعادة الرفع بعد التصحيح.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">2.4 تجديد الترخيص</div>
+        <div class="sub-clause-body">
+          المؤسسة مسؤولة عن تجديد ترخيصها قبل تاريخ الانتهاء بـ <strong>30 يوماً على الأقل</strong>. في حال انتهائه، يتمّ إيقاف الحساب تلقائياً دون استرداد الاشتراك المتبقّي.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">2.5 المسؤولية والمنع المتعدّد</div>
+        <div class="sub-clause-body">
+          الممثّل القانوني يتحمّل <strong>كامل المسؤولية القانونية</strong> عن صحّة البيانات. أيّ تزوير يُعرّضه للمساءلة الجزائية. يُمنع تسجيل نفس المؤسسة (نفس رقم الترخيص) مرّتين أو أكثر.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>04</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 3 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 03 · 05</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">03</div>
+        <div class="clause-title">الاشتراك — الباقات والرسوم<span class="clause-title-en">Subscription, Plans &amp; Fees</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.1 وجوب الاشتراك</div>
+        <div class="sub-clause-body">
+          الظهور في التطبيق وتقديم العروض والأكواد <strong>مشروط بدفع الاشتراك</strong> وفقاً للباقة المُختارة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.2 الباقات المُتاحة</div>
+        <div class="sub-clause-body">
+          يحدّد التطبيق حالياً <strong>3 باقات اشتراك:</strong> الباقة الأساسية (25 د.ك/شهر)، الباقة المحترفة (55 د.ك/شهر)، الباقة المتميزة (120 د.ك/شهر). تختلف الباقات في عدد العروض والمنشورات والميزات الإضافية.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.3 الدفع ووسائله</div>
+        <div class="sub-clause-body">
+          الاشتراك يُدفع <strong>مقدّماً</strong> (شهري أو سنوي). وسائل الدفع المقبولة: KNET، Visa، Mastercard، تحويل بنكي. يُصدر التطبيق فاتورة إلكترونية رسمية بكل دفعة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.4 الفاتورة الضريبية</div>
+        <div class="sub-clause-body">
+          في حال تطبيق ضريبة القيمة المُضافة في الكويت مستقبلاً، تُضاف للفاتورة وفقاً للقانون. المؤسسة مسؤولة عن إقرارها الضريبي الخاصّ بها.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.5 الاسترداد</div>
+        <div class="sub-clause-body">
+          رسوم الاشتراك <strong>غير قابلة للاسترداد</strong> إلا في حالتين فقط: خطأ تقني صريح في الدفع، أو إغلاق التطبيق نهائياً من قِبَل الإدارة (يُسترد المبلغ المُتناسب مع الفترة المتبقّية حسب التقدير المنفرد للإدارة).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.6 التجديد التلقائي</div>
+        <div class="sub-clause-body">
+          الاشتراك <strong>لا يُجدَّد تلقائياً</strong> بشكل افتراضي. المؤسسة تتلقّى إشعاراً قبل 14 يوماً من انتهاء الاشتراك. في حال عدم التجديد، يُعلَّق الحساب ويُمنح فترة سماح <strong>7 أيام</strong> قبل الإيقاف الكامل.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.7 ترقية / تخفيض الباقة</div>
+        <div class="sub-clause-body">
+          يحقّ للمؤسسة <strong>ترقية</strong> الباقة في أي وقت — يُحسب الفرق التناسبي. <strong>تخفيض</strong> الباقة لا يدخل حيّز التنفيذ إلا من بداية الدورة الشهرية التالية.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.8 العروض الترويجية</div>
+        <div class="sub-clause-body">
+          الإدارة تحتفظ بحقّ إطلاق عروض ترويجية للباقات. هذه العروض لا تشمل الاشتراكات السابقة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">3.9 تعديل الأسعار</div>
+        <div class="sub-clause-body">
+          يحقّ للإدارة تعديل أسعار الباقات بإشعار مسبق <strong>30 يوماً</strong>. الأسعار الجديدة تُطبَّق من بداية الدورة التالية للمؤسسات الحالية.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>05</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 4 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 04 · 06</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">04</div>
+        <div class="clause-title">الأكواد — التزامات المؤسسة<span class="clause-title-en">Codes &amp; Institution Obligations</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4.1 رسم الكود</div>
+        <div class="sub-clause-body">
+          العميل يدفع <strong>1 د.ك</strong> للتطبيق مقابل كل كود يشتريه. <strong>100% من رسم الكود يعود للتطبيق.</strong> المؤسسة لا تحصل على نصيب من رسم الكود.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4.2 الالتزام بقبول الكود</div>
+        <div class="sub-clause-body">
+          <strong>تلتزم المؤسسة بالقبول الفوري للكود الصالح المُقدَّم من العميل</strong> ومنحه الخصم أو العرض الموعود به دون أي تردّد أو تأخير أو محاولة استثناء.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4.3 إثبات الاستخدام</div>
+        <div class="sub-clause-body">
+          يُحدَّث حالة الكود إلى "مُستخدَم" داخل التطبيق فور تقديمه. يحتفظ التطبيق بسجل كامل لكل كود وموعد استخدامه.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4.4 رفض الكود</div>
+        <div class="sub-clause-body">
+          يحقّ للمؤسسة <strong>رفض كود في حالة واحدة فقط</strong>: الاحتيال الواضح (تقديم نفس الكود مرّتين أو كود مزوّر). أي رفض غير مُبرَّر يُعدّ مخالفة جسيمة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4.5 الخصم الفعلي</div>
+        <div class="sub-clause-body">
+          المؤسسة تتعهّد بأن الخصم المُعلَن عنه <strong>حقيقي وغير وهمي</strong>. يُحظر رفع السعر الأصلي قبل الخصم لإعطاء انطباع وهمي. الإدارة تحتفظ بحقّ التحقّق الميداني.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4.6 شكاوى العملاء</div>
+        <div class="sub-clause-body">
+          في حال شكوى عميل من رفض كوده: تتمّ مراجعة الشكوى من الإدارة خلال 48 ساعة. في حال ثبوت المخالفة:
+        </div>
+        <table class="fine-table">
+          <thead>
+            <tr><th>المخالفة</th><th>العقوبة</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>الأولى</td><td>تحذير + تعويض العميل + خصم 10 د.ك من الاشتراك</td></tr>
+            <tr><td>الثانية</td><td>إيقاف 7 أيام + تعويض + خصم 25 د.ك</td></tr>
+            <tr><td>الثالثة</td><td>إنهاء العقد + استبعاد دائم من التطبيق</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>06</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 4-A (NEW v2.2) — APP PROVISION & STAFF TRAINING ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 4-A · 07</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">4-A</div>
+        <div class="clause-title">
+          توفير التطبيق وتدريب الموظفين — التزام جوهري
+          <span class="clause-title-en">App Provision &amp; Staff Training — Material Obligation</span>
+        </div>
+        <div class="protection-badge">جديد v2.2 · CRITICAL</div>
+      </div>
+
+      <div class="intro-box">
+        <p><strong>📌 تنبيه قانوني هام:</strong> هذا البند مُضاف في إصدار v2.2 لحماية حقّ العميل ومنع تعطيل الكود بسبب جهل الموظفين. الإخلال به يُعدّ <strong>خرقاً جسيماً للعقد</strong> ولا يخضع لأي حدود مسؤولية في البنود الأخرى.</p>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4-A.1 تثبيت التطبيق</div>
+        <div class="sub-clause-body">
+          تلتزم المؤسسة بتثبيت تطبيق <strong>"كويت كيدز"</strong> على الجهاز الشخصي لصاحب أو مدير المؤسسة، وعلى أجهزة <strong>جميع موظفي استقبال العملاء</strong>، طوال فترة الاشتراك ودون انقطاع.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4-A.2 الجاهزية الدائمة</div>
+        <div class="sub-clause-body">
+          تتعهّد المؤسسة بإبقاء حساب المؤسسة فعّالاً وجاهزاً للاستخدام في <strong>كافة ساعات العمل الرسمية</strong>، مع توفير اتصال إنترنت كافٍ لتشغيل التطبيق ومسح الأكواد.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4-A.3 تدريب الموظفين</div>
+        <div class="sub-clause-body">
+          تلتزم المؤسسة بإعلام جميع موظفي الاستقبال — الحاليين والجدد — بوجود التطبيق وآلية عمله، وتدريبهم على:
+          <ul class="clean-list" style="margin-top: 2mm;">
+            <li>فتح حساب المؤسسة وتسجيل الدخول.</li>
+            <li>استخدام شاشة <strong>"مسح كود العميل"</strong> (الكاميرا، رفع صورة، أو الإدخال اليدوي).</li>
+            <li>تفعيل الباركود وتأكيد الخصم للعميل خلال 5 دقائق كحدّ أقصى.</li>
+            <li>التعامل مع رسائل الخطأ (كود مستخدم سابقاً / لمؤسسة أخرى / منتهي الصلاحية).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">4-A.4 إثبات التدريب</div>
+        <div class="sub-clause-body">
+          يحقّ لإدارة التطبيق طلب <strong>إثبات مكتوب</strong> من المؤسسة بتدريب موظفيها، يُقدَّم في موعد أقصاه <strong>7 أيام من تاريخ الطلب</strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>07</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 4-A (continued) — VIOLATIONS & COMPENSATION ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 4-A · 08</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">4-A</div>
+        <div class="clause-title">
+          تابع: تعريف المخالفة + التعويض
+          <span class="clause-title-en">Violation Definition &amp; Compensation</span>
+        </div>
+      </div>
+
+      <div class="critical-box">
+        <strong><span class="icon">⚠️</span>4-A.5 — تعريف المخالفة الموثّقة:</strong>
+        <p style="margin-top: 2mm;">أيٌّ من الحالات التالية يُعدّ <strong>مخالفة موثّقة موجبة للتعويض الفوري</strong>، دون حاجة لإثبات قصد أو عمد:</p>
+        <ul class="clean-list" style="margin-top: 2mm;">
+          <li><strong>(أ)</strong> عدم وجود التطبيق على جهاز الموظف وقت قدوم العميل.</li>
+          <li><strong>(ب)</strong> عدم قدرة الموظف على تفعيل الكود بسبب جهله بآلية التطبيق.</li>
+          <li><strong>(ج)</strong> تأخّر تفعيل الكود لأكثر من <strong>5 دقائق</strong> بسبب الجهل بالتطبيق.</li>
+          <li><strong>(د)</strong> رفض الموظف للكود لأسباب غير صحيحة (ادّعاء "غير صالح" دون محاولة تفعيله).</li>
+          <li><strong>(هـ)</strong> إعطاء العميل معلومات خاطئة عن آلية الخصم أو شروط الكود.</li>
+          <li><strong>(و)</strong> إجبار العميل على دفع السعر الكامل ثم وعده بالاسترداد لاحقاً، بدلاً من تفعيل الكود فورياً.</li>
+          <li><strong>(ز)</strong> أيّ إحراج للعميل أو إساءة معاملة بسبب جهل الموظف.</li>
+          <li><strong>(ح)</strong> إيقاف الإنترنت أو إغلاق التطبيق <strong>عمداً</strong> لتجنّب تفعيل الكود.</li>
+        </ul>
+      </div>
+
+      <div class="sub-clause" style="background: var(--gold-pale); border-right: 4px solid var(--gold);">
+        <div class="sub-clause-title">💰 4-A.6 — التعويض الإلزامي للعميل: "الخصم التعويضي المضاعف"</div>
+        <div class="sub-clause-body">
+          يلتزم المؤسسة فوراً وفي نفس الزيارة بتقديم <strong>خصم إضافي للعميل يساوي قيمة الخصم الأصلي للكود</strong>.
+
+          <table class="fine-table" style="margin-top: 3mm;">
+            <thead>
+              <tr><th>قيمة الكود الأصلي</th><th>التعويض الإلزامي</th><th>الإجمالي للعميل</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>خصم 5 د.ك</td><td>خصم إضافي 5 د.ك</td><td>توفير 10 د.ك</td></tr>
+              <tr><td>خصم 25 د.ك</td><td>خصم إضافي 25 د.ك</td><td>توفير 50 د.ك</td></tr>
+              <tr><td>خصم 30%</td><td>خصم إضافي 30%</td><td>خصم 60% على نفس الفاتورة</td></tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top: 3mm;"><strong>قاعدة عدم الإسقاط:</strong> إذا غادر العميل قبل التعويض الفوري، تلتزم المؤسسة بدفع قيمة التعويض <strong>نقداً للعميل خلال 7 أيام</strong>. التعويض حقّ للعميل لا يُسقَط بأي اتفاق لاحق أو ضغط من المؤسسة.</p>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">⚖️ 4-A.7 — الغرامات لإدارة التطبيق (إضافة لتعويض العميل)</div>
+        <div class="sub-clause-body">
+          <table class="fine-table">
+            <thead>
+              <tr><th>المخالفة</th><th>الغرامة لإدارة التطبيق</th><th>إجراء إضافي</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>الأولى</td><td>50 د.ك</td><td>تحذير رسمي</td></tr>
+              <tr><td>الثانية</td><td>150 د.ك</td><td>إيقاف الحساب 14 يوماً دون استرداد رسوم الاشتراك</td></tr>
+              <tr><td>الثالثة فأكثر</td><td>500 د.ك (حدّ أدنى)</td><td>إنهاء العقد + احتفاظ الإدارة بكامل الأموال + منع التسجيل مجدّداً لـ 2 سنة</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>08</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 4-A (continued) — EVIDENCE & ACKNOWLEDGMENT ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 4-A · 09</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">4-A</div>
+        <div class="clause-title">
+          تابع: توثيق المخالفات + الإقرار الإلزامي
+          <span class="clause-title-en">Evidence &amp; Binding Acknowledgment</span>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">📝 4-A.8 — توثيق المخالفات (الأدلّة المقبولة)</div>
+        <div class="sub-clause-body">
+          يكفي أيٌّ ممّا يلي كدليل ملزم على وقوع المخالفة، ولا تشترط الإدارة أكثر من واحد:
+          <ul class="clean-list" style="margin-top: 2mm;">
+            <li><strong>شكوى موثّقة</strong> من العميل عبر التطبيق مع تاريخ ووقت الحادثة.</li>
+            <li><strong>محادثة واتساب</strong> مع الدعم الرسمي 55802612.</li>
+            <li><strong>تسجيل صوتي أو مرئي</strong> للحادثة من العميل أو شهود.</li>
+            <li><strong>شهادات شهود</strong> (عملاء آخرين، موظفي مؤسسات مجاورة).</li>
+            <li><strong>Screenshots</strong> من تطبيق المؤسسة تثبت عدم وجود سجلّ تفعيل في الوقت المُتنازَع عليه.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <strong>📢 4-A.9 — إقرار صريح وإلزامي:</strong>
+        <p style="margin-top: 2mm;">بقبول هذا البند، تُقرّ المؤسسة وممثّلها القانوني بالآتي إقراراً قاطعاً غير قابل للنقض:</p>
+        <ul class="clean-list" style="margin-top: 2mm;">
+          <li>هذا البند <strong>جوهري وليس شكلياً</strong>، والإخلال به ليس خطأً عفوياً بل خرقاً جسيماً للعقد.</li>
+          <li>التعويضات المذكورة هي <strong>حدّ أدنى</strong>، ولا تمنع إدارة التطبيق من المطالبة بتعويضات إضافية إذا ثبت ضرر أكبر.</li>
+          <li>تلتزم المؤسسة بإعلام <strong>جميع موظفي الاستقبال شخصياً</strong> بهذا البند تحديداً، والاحتفاظ بإقرار موقّع من كلٍّ منهم.</li>
+          <li>الاختصاص القضائي حصراً لـ <strong>محاكم دولة الكويت</strong> طبقاً للبند 16 (أعلاه).</li>
+          <li>أي <strong>حصر للمسؤولية</strong> في هذا العقد (البند 19) <strong>لا يشمل هذا البند</strong> — المسؤولية هنا غير قابلة للتحديد أو الإلغاء أو التخفيف.</li>
+        </ul>
+      </div>
+
+      <div class="intro-box" style="margin-top: 4mm;">
+        <p><strong>🤝 الفلسفة وراء هذا البند:</strong> الكود الذي يشتريه العميل بـ 1 د.ك ليس مجرّد ورقة، بل هو <strong>التزام تعاقدي ثلاثي الأطراف</strong> (العميل + المؤسسة + الإدارة). فشل المؤسسة في تفعيله بسبب جهل الموظف لا يقلّ خطورة عن رفضه المتعمّد. هذا البند يضمن أن <strong>العميل لن يكون ضحية لإهمال تدريبي</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>09</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 5 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 05 · 07</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">05</div>
+        <div class="clause-title">العروض والمنشورات<span class="clause-title-en">Offers &amp; Posts</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">5.1 المراجعة الإلزامية</div>
+        <div class="sub-clause-body">
+          كل عرض أو منشور يخضع لمراجعة الإدارة قبل الظهور للعملاء. الإدارة تراجع خلال <strong>24-72 ساعة</strong> (حسب الباقة).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">5.2 معايير القبول</div>
+        <div class="sub-clause-body">
+          يُقبل العرض إذا كان واضحاً ومفصّلاً (السعر، نسبة الخصم، التواريخ، الفئة)، خالياً من ادّعاءات مُضلّلة، خالياً من المحتوى الممنوع (راجع البند 8)، خاضعاً للأنظمة الكويتية.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">5.3 الرفض</div>
+        <div class="sub-clause-body">
+          في حال الرفض، تُرسَل <strong>رسالة بسبب الرفض</strong> للمؤسسة. يحقّ لها التعديل وإعادة الإرسال.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">5.4 الصور والمحتوى</div>
+        <div class="sub-clause-body">
+          يُسمح فقط بصور <strong>مملوكة للمؤسسة</strong> أو ذات حقوق نشر مفتوحة. يُمنع نشر صور لأطفال محدّدين بدون موافقة خطّية من ولي أمرهم. المؤسسة تتحمّل <strong>كامل المسؤولية القانونية</strong> عن أي صورة تنشرها.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">5.5 الادّعاءات</div>
+        <div class="sub-clause-body">
+          يُمنع ادّعاء "الأرخص في الكويت" أو "الأفضل" بدون دليل قابل للإثبات. يُمنع ادّعاء حصول المؤسسة على شهادات/جوائز إلا بدليل.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">5.6 إيقاف العرض</div>
+        <div class="sub-clause-body">
+          يحقّ للمؤسسة سحب عرضها في أي وقت قبل انتهائه. لكن <strong>يجب احترام الأكواد المباعة قبل السحب</strong>.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">5.7 التعديل</div>
+        <div class="sub-clause-body">
+          أي تعديل على عرض مُعتمَد يُعيد دورة المراجعة من جديد.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>07</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 6 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 06 · 08</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">06</div>
+        <div class="clause-title">التقييمات والتعليقات<span class="clause-title-en">Reviews &amp; Comments</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">6.1 طبيعة التقييمات</div>
+        <div class="sub-clause-body">
+          العملاء يحقّ لهم تقييم المؤسسة (نجوم 1-5 + تعليق) <strong>بشروط محدّدة</strong>:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>يحقّ التقييم فقط للعميل الذي اشترى كوداً من المؤسسة.</li>
+            <li>نافذة التقييم: <strong>30 يوماً</strong> من تاريخ الشراء.</li>
+            <li>تقييم واحد لكل كود.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">6.2 ظهور التقييمات</div>
+        <div class="sub-clause-body">
+          جميع التقييمات (الإيجابية والسلبية) تظهر علناً في صفحة المؤسسة. متوسّط النجوم يُحسب تلقائياً.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">6.3 حقّ الردّ</div>
+        <div class="sub-clause-body">
+          يحقّ للمؤسسة <strong>الردّ علناً</strong> على أي تقييم. الردّ يخضع لنفس قواعد المحتوى (يُمنع السبّ، الإهانة).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">6.4 الإبلاغ عن تقييم مُسيء</div>
+        <div class="sub-clause-body">
+          يحقّ للمؤسسة الإبلاغ عن تقييم تعتقد أنه يحوي ادّعاءات كاذبة أو يُمثّل تشهيراً. تُراجَع الشكوى خلال 48 ساعة. في حال ثبوت المخالفة، يُحذف التقييم.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">6.5 ممنوع منعاً باتاً</div>
+        <div class="sub-clause-body">
+          يُمنع على المؤسسة:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>إنشاء تقييمات وهمية لنفسها أو لمنافسيها.</li>
+            <li>الضغط على العملاء لتعديل تقييماتهم.</li>
+            <li>معاملة العميل الذي قيّم سلبياً معاملة سيّئة.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        ⚠️ أي مخالفة لبنود التقييمات تؤدّي إلى <strong>إيقاف فوري وإنهاء عقد</strong>.
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>08</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 7 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 07 · 09</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">07</div>
+        <div class="clause-title">التزامات الجودة والسلامة<span class="clause-title-en">Quality &amp; Safety Obligations</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">7.1 سلامة الأطفال — الأولوية القصوى</div>
+        <div class="sub-clause-body">
+          المؤسسة تتعهّد بـ:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>توفير بيئة آمنة للأطفال وفقاً لأنظمة وزارة الشؤون والبلدية.</li>
+            <li>وجود طاقم مُؤهَّل ومُدرَّب وفحص سجلّاته الجنائية.</li>
+            <li>توفير الإسعافات الأولية وتدريب الموظفين عليها.</li>
+            <li>التأمين الصحّي حسب القانون.</li>
+            <li>تأمين مسؤولية مدنية ساري المفعول.</li>
+            <li>الالتزام بأنظمة الحريق والسلامة المدنية.</li>
+            <li>توفير شهادات صحّية معتمدة لجميع الموظفين.</li>
+            <li>الالتزام بنسبة الإشراف (مدرّس لكل عدد محدّد من الأطفال).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">7.2 المسؤولية الكاملة</div>
+        <div class="sub-clause-body">
+          <strong>كافة الأضرار أو الإصابات التي تقع داخل المؤسسة هي مسؤولية المؤسسة وحدها.</strong> التطبيق هو منصّة وسيطة فقط ولا يتحمّل أي مسؤولية. (راجع البند 25 للتفصيل الكامل لحماية الأطفال).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">7.3 التعويض</div>
+        <div class="sub-clause-body">
+          في حال أي ضرر يلحق بالطفل بسبب إهمال المؤسسة، تلتزم المؤسسة بتعويض ولي الأمر وفقاً للقانون. لا يحقّ المطالبة من التطبيق.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">7.4 معايير الجودة</div>
+        <div class="sub-clause-body">
+          المؤسسة تتعهّد بالنظافة والصيانة الدورية، جودة الأدوات والمعدّات، الالتزام بالمواعيد، توفير الوصف الفعلي للخدمة (دون مبالغة).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>09</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 8 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 08 · 10</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">08</div>
+        <div class="clause-title">السلوك والمحتوى المحظور<span class="clause-title-en">Prohibited Conduct &amp; Content</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">8.1 حظر تامّ</div>
+        <div class="sub-clause-body">
+          يُمنع منعاً قاطعاً على المؤسسة وموظفيها — في كل التواصل عبر التطبيق:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>ألفاظ نابية أو شتائم.</li>
+            <li>إساءة دينية بأي شكل.</li>
+            <li>إساءة للذات الأميرية أو الدولة.</li>
+            <li>محتوى عنصري أو تمييزي.</li>
+            <li>محتوى جنسي.</li>
+            <li>تحريض على العنف أو الكراهية.</li>
+            <li>إساءة لمؤسسات منافسة بالاسم.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">8.2 أخلاقيات إعلانية</div>
+        <div class="sub-clause-body">
+          يُمنع استخدام صور أو أسماء أطفال لأغراض دعائية بدون موافقة خطّية. يُمنع استغلال صور أطفال لإثارة العاطفة الترويجية بشكل مُبالغ فيه.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">8.3 المسؤولية الجنائية</div>
+        <div class="sub-clause-body">
+          أي محتوى يُشكّل جريمة بموجب القانون الكويتي يُحال للجهات المختصّة (وزارة الداخلية، النيابة العامة).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">8.4 المخالفات الإدارية</div>
+        <div class="sub-clause-body">
+          <table class="fine-table">
+            <thead>
+              <tr><th>المرة</th><th>العقوبة</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>الأولى</td><td>تحذير + حذف المحتوى + خصم 5 د.ك</td></tr>
+              <tr><td>الثانية</td><td>إيقاف 7 أيام + خصم 25 د.ك</td></tr>
+              <tr><td>الثالثة</td><td>إنهاء العقد + استبعاد دائم</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>10</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 9 + 10 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 09-10 · 11</div>
+  </div>
+
+  <div class="page-content">
+
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">09</div>
+        <div class="clause-title">حماية بيانات العملاء<span class="clause-title-en">Customer Data Protection</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">9.1 حدود الوصول</div>
+        <div class="sub-clause-body">
+          المؤسسة تحصل <strong>فقط</strong> على البيانات الضرورية: اسم العميل، رقم هاتفه، اسم الطفل المُسجَّل، رقم الكود وصلاحيته.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">9.2 استخدام البيانات</div>
+        <div class="sub-clause-body">
+          المؤسسة تتعهّد بـ:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>استخدام البيانات حصراً لتقديم الخدمة المُتفَّق عليها.</li>
+            <li><strong>عدم التواصل مع العميل لأغراض تسويقية بدون إذنه.</strong></li>
+            <li><strong>عدم بيع أو مشاركة</strong> البيانات مع أي طرف ثالث.</li>
+            <li>حذف البيانات بعد انتهاء الغرض منها.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">9.3 الانتهاكات</div>
+        <div class="sub-clause-body">
+          <strong>المرة الأولى:</strong> خصم 50 د.ك + تحذير. <strong>المرة الثانية:</strong> إنهاء العقد + إحالة قانونية.
+        </div>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">10</div>
+        <div class="clause-title">حقوق الملكية الفكرية<span class="clause-title-en">Intellectual Property</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">10.1 ملكية المحتوى</div>
+        <div class="sub-clause-body">
+          المؤسسة تتعهّد بأن جميع المحتويات مملوكة لها أو لديها ترخيص استخدامها، ولا تنتهك حقوق ملكية فكرية لطرف ثالث.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">10.2 التعويض القانوني</div>
+        <div class="sub-clause-body">
+          في حال أي مطالبة من طرف ثالث بسبب محتوى رفعته المؤسسة، <strong>تتحمّل المؤسسة كامل المسؤولية والتعويضات</strong> ولا يحقّ مطالبة التطبيق.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">10.3 ترخيص الإدارة</div>
+        <div class="sub-clause-body">
+          بمشاركة المحتوى، تمنح المؤسسة الإدارة ترخيصاً غير حصري لاستخدامه داخل التطبيق، في حسابات التطبيق على وسائل التواصل، وفي المواد التسويقية.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>11</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 11 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 11 · 12</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">11</div>
+        <div class="clause-title">الإيقاف والإنهاء<span class="clause-title-en">Suspension &amp; Termination</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">11.1 الإيقاف المؤقّت</div>
+        <div class="sub-clause-body">
+          الإدارة تحتفظ بحقّ إيقاف حساب المؤسسة مؤقّتاً (إخفاء من العملاء) في حالات: شكوى عميل قيد التحقيق، التحقّق من ترخيص بحاجة إلى تجديد، أو مخالفة إدارية بسيطة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">11.2 الإنهاء النهائي</div>
+        <div class="sub-clause-body">
+          الإدارة تحتفظ بحقّ إنهاء عقد المؤسسة دون إشعار في الحالات التالية:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>مخالفة جسيمة لأي بند من هذه الشروط.</li>
+            <li>ثبوت ارتكاب احتيال.</li>
+            <li>ثبوت تزوير في الترخيص أو البيانات.</li>
+            <li>شكاوى متكرّرة من العملاء.</li>
+            <li>انتهاء الترخيص بدون تجديد لمدة تتجاوز 60 يوماً.</li>
+            <li>تكرار المخالفات الأخلاقية.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">11.3 الإنهاء من المؤسسة</div>
+        <div class="sub-clause-body">
+          يحقّ للمؤسسة إنهاء عقدها بإشعار مُسبَق <strong>30 يوماً</strong>. الاشتراك المدفوع مسبقاً <strong>لا يُسترد</strong>.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">11.4 الإنهاء من جانب الإدارة (بدون مسؤولية)</div>
+        <div class="sub-clause-body">
+          يحقّ للإدارة إنهاء العقد في أي وقت بإشعار <strong>14 يوماً</strong> دون إبداء أسباب. في هذه الحالة، يُسترد المبلغ المُتناسب مع الفترة غير المُستخدَمة وفقاً للتقدير المنفرد للإدارة. لا يحقّ للمؤسسة المطالبة بأي تعويضات إضافية أو دعوى "إنهاء غير مشروع".
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">11.5 الالتزامات بعد الإنهاء</div>
+        <div class="sub-clause-body">
+          بعد إنهاء العقد:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li><strong>يجب على المؤسسة احترام جميع الأكواد المباعة قبل الإنهاء</strong> حتى تاريخ انتهاء صلاحيتها.</li>
+            <li>بيانات المؤسسة تُحفَظ لأغراض المحاسبة لمدة 5 سنوات.</li>
+            <li>للمؤسسة 30 يوم لتصدير بياناتها قبل الحذف الكامل.</li>
+            <li>لا يحقّ للمؤسسة المطالبة باسترداد إلا في حالة الإنهاء بسبب خطأ صريح من الإدارة (وفقاً لتقديرها المنفرد).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>12</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSES 12 + 13 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 12-13 · 13</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">12</div>
+        <div class="clause-title">السرية والمعلومات التجارية<span class="clause-title-en">Confidentiality</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">12.1</div>
+        <div class="sub-clause-body">
+          أي معلومات تكشفها الإدارة للمؤسسة (إحصائيات، نسب، خطط مستقبلية) تُعدّ <strong>معلومات تجارية سرّية</strong>.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">12.2</div>
+        <div class="sub-clause-body">
+          يُمنع مشاركة هذه المعلومات مع المنافسين أو وسائل الإعلام بدون إذن خطّي.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">12.3</div>
+        <div class="sub-clause-body">
+          الالتزام بالسرية يبقى نافذاً لمدة <strong>5 سنوات</strong> بعد انتهاء العقد.
+        </div>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">13</div>
+        <div class="clause-title">حقوق الإدارة<span class="clause-title-en">Management Rights</span></div>
+      </div>
+
+      <div class="clause-body">
+        الإدارة تحتفظ بالحقوق التالية:
+        <ul class="clean-list" style="margin-top: 2mm;">
+          <li><strong>مراجعة وحذف</strong> أي محتوى مُخالف.</li>
+          <li><strong>اعتماد أو رفض</strong> أي ترخيص أو عرض أو منشور.</li>
+          <li><strong>إيقاف أو حظر</strong> أي مؤسسة لمخالفة جسيمة.</li>
+          <li><strong>تعديل تصميم التطبيق</strong> وميزاته في أي وقت.</li>
+          <li><strong>تعديل الباقات والأسعار</strong> بإشعار 30 يوماً مُسبَقاً.</li>
+          <li><strong>التحقّق الميداني</strong> من جودة الخدمة (زيارة سرّية بدون إعلان).</li>
+          <li><strong>مشاركة بيانات المؤسسة</strong> مع الجهات الحكومية عند الطلب الرسمي.</li>
+          <li><strong>التقدير المنفرد</strong> في جميع القرارات الإدارية والتعويضات.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>13</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSES 14 + 15 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 14-15 · 14</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">14</div>
+        <div class="clause-title">الإعلانات والترويج<span class="clause-title-en">Advertising &amp; Marketing</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">14.1</div>
+        <div class="sub-clause-body">
+          المؤسسة توافق على أن الإدارة تستخدم اسمها وشعارها في الترويج للتطبيق.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">14.2</div>
+        <div class="sub-clause-body">
+          المؤسسة تحصل على <strong>شارة "مُعتمدة" (✓)</strong> بعد اكتمال التحقّق من ترخيصها. هذه الشارة ميزة تنافسية مهمّة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">14.3 لا ضمانات للنتائج</div>
+        <div class="sub-clause-body">
+          الإدارة <strong>لا تضمن</strong> عدد العملاء، الأكواد المباعة، الإيرادات، أو أي مقياس نمو. الأداء يعتمد على عوامل عديدة منها جودة الخدمة وتسويق المؤسسة (راجع البند 21 للتفصيل الكامل).
+        </div>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">15</div>
+        <div class="clause-title">القوّة القاهرة<span class="clause-title-en">Force Majeure</span></div>
+      </div>
+
+      <div class="clause-body">
+        <p>أي تأخير أو إخلال بالالتزامات بسبب <strong>ظروف خارجة عن الإرادة</strong> لا يُعدّ مخالفة. تشمل القوّة القاهرة على سبيل المثال لا الحصر:</p>
+        <ul class="clean-list" style="margin-top: 2mm;">
+          <li>الكوارث الطبيعية (زلازل، فيضانات، عواصف).</li>
+          <li>الأوبئة والجوائح (مثل COVID-19).</li>
+          <li>الحروب، الإرهاب، الاضطرابات الأهلية.</li>
+          <li>القرارات الحكومية، العقوبات الدولية، التغييرات التشريعية.</li>
+          <li>انقطاع شبكة الإنترنت في الكويت أو على المستوى الإقليمي.</li>
+          <li>الهجمات الإلكترونية الواسعة (DDoS، Ransomware).</li>
+          <li>أعطال شركات الاتصالات والكهرباء.</li>
+          <li>أعطال خدمات الاستضافة والخدمات الخارجية.</li>
+          <li>الإضرابات العمّالية الواسعة.</li>
+        </ul>
+        <p style="margin-top: 2mm;">في حال استمرار القوّة القاهرة لأكثر من <strong>60 يوماً</strong>، يحقّ لأي طرف إنهاء العقد دون التزامات إضافية.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>14</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSES 16 + 17 + 18 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 16-18 · 15</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">16</div>
+        <div class="clause-title">القانون الواجب التطبيق والاختصاص<span class="clause-title-en">Governing Law &amp; Jurisdiction</span></div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">16.1 القانون الكويتي</div>
+        <div class="sub-clause-body">
+          هذه الاتفاقية تخضع لـ <strong>قوانين دولة الكويت</strong>: قانون التجارة 68/1980، قانون الشركات التجارية 1/2016، قانون حماية المستهلك 39/2014، قانون مكافحة جرائم تقنية المعلومات 63/2015، قانون المعاملات الإلكترونية 20/2014.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">16.2 الاختصاص الحصري</div>
+        <div class="sub-clause-body">
+          أي نزاع يكون من اختصاص <strong>محاكم الكويت الكلّية حصراً</strong>.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">16.3 محاولة التسوية الودّية</div>
+        <div class="sub-clause-body">
+          قبل اللجوء للقضاء، يلتزم الطرفان بمحاولة التسوية الودّية لمدة <strong>30 يوماً</strong> عبر مراسلات رسمية.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">16.4 التحكيم (اختياري)</div>
+        <div class="sub-clause-body">
+          في حال اتفاق الطرفين، يمكن إحالة النزاع إلى <strong>مركز الكويت للتحكيم التجاري</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">17</div>
+        <div class="clause-title">التعديلات على الاتفاقية<span class="clause-title-en">Amendments</span></div>
+      </div>
+
+      <div class="clause-body">
+        <p>الإدارة تحتفظ بحقّ تعديل هذه الشروط في أي وقت بإشعار <strong>30 يوماً</strong> مُسبَقاً. استمرار استخدام المؤسسة للتطبيق بعد التعديل يُعدّ موافقة على النسخة الجديدة. في حال عدم موافقة المؤسسة، يحقّ لها إنهاء العقد دون التزامات إضافية مع استرداد الفترة غير المُستخدَمة.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header">
+        <div class="clause-num">18</div>
+        <div class="clause-title">التواصل الرسمي<span class="clause-title-en">Official Communication</span></div>
+      </div>
+
+      <div class="clause-body">
+        <p>التواصل الرسمي يتمّ عبر:</p>
+        <ul class="clean-list" style="margin-top: 1.5mm;">
+          <li><strong>قسم الرسائل في التطبيق</strong> (السوبر أدمن → المؤسسة).</li>
+          <li><strong>البريد الإلكتروني المسجَّل</strong> في حساب المؤسسة.</li>
+          <li><strong>الواتساب الرسمي:</strong> 55802612.</li>
+        </ul>
+        <p style="margin-top: 2mm;">أي تواصل خارج هذه القنوات لا يُعدّ رسمياً.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>15</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== SECTION DIVIDER: PROTECTION ========== -->
+<div class="page section-divider-page">
+  <div class="section-divider-content">
+    <div class="section-divider-num">II</div>
+    <div class="section-divider-eyebrow">PART TWO · LEGAL PROTECTION</div>
+    <div class="section-divider-title">القسم الثاني<br>بنود الحماية القانونية</div>
+    <div class="section-divider-desc">
+      البنود من 19 إلى 31 — تحدّد بدقّة قانونية صارمة حدود مسؤولية الإدارة + التزامات التعويض من المؤسسة + الحماية من الدعاوى. <br><br>
+      <strong style="color: var(--gold);">يُرجى قراءة هذه البنود بعناية فائقة.</strong>
+    </div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 19: LIMITATION OF LIABILITY ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 19 · 17</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">19</div>
+        <div class="clause-title">حدّ المسؤولية المالية<span class="clause-title-en">Limitation of Liability</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">19.1 الحدّ الأقصى للتعويض</div>
+        <div class="sub-clause-body">
+          في جميع الأحوال — مهما كان سبب أي مطالبة (إخلال تعاقدي، عمل غير مشروع، إهمال، خطأ، تقصير، أو غير ذلك) — يكون الحدّ الأقصى لمسؤولية الإدارة المالية تجاه المؤسسة هو <strong>الأقل</strong> من:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>القيمة الإجمالية للاشتراكات المدفوعة فعلياً خلال <strong>آخر 3 أشهر</strong> قبل تاريخ الحدث.</li>
+            <li>مبلغ <strong>مئة دينار كويتي (100 د.ك)</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">19.2 الأضرار المُستثناة</div>
+        <div class="sub-clause-body">
+          تُخلي الإدارة مسؤوليتها صراحةً وبشكل كامل عن:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>الأضرار <strong>غير المباشرة</strong> (Indirect damages).</li>
+            <li>الأضرار <strong>التبعية</strong> (Consequential damages).</li>
+            <li>الأضرار <strong>الخاصّة والعقابية</strong> (Special &amp; Punitive damages).</li>
+            <li><strong>الأرباح الضائعة</strong> (Lost profits).</li>
+            <li><strong>خسارة الفرص التجارية</strong> (Lost business opportunities).</li>
+            <li><strong>خسارة السمعة التجارية</strong> (Loss of goodwill).</li>
+            <li><strong>انقطاع الأعمال</strong> (Business interruption).</li>
+            <li><strong>خسارة البيانات</strong> (Data loss).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause" style="background: var(--gold-pale); border-right-color: var(--gold-bright);">
+        <div class="sub-clause-title">19.3 التعويض بالتقدير المنفرد للإدارة ⭐</div>
+        <div class="sub-clause-body">
+          في حال ثبوت أي تقصير من جانب الإدارة بالتزاماتها التعاقدية:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>يُحدَّد مبلغ وشكل التعويض <strong>حصرياً وفقاً للتقدير المنفرد لمالك التطبيق</strong>.</li>
+            <li>تأخذ الإدارة في اعتبارها: طبيعة التقصير، قيمة الاشتراك، فترة الانقطاع، وأي عوامل أخرى تراها مناسبة.</li>
+            <li>قرار الإدارة بشأن مبلغ وشكل التعويض هو <strong>قرار نهائي وغير قابل للطعن</strong> أمام أي جهة قضائية.</li>
+            <li>التعويض يبقى ضمن الحدّ الأقصى المنصوص عليه في البند 19.1.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">19.4 الإقرار بالحدّ الأقصى</div>
+        <div class="sub-clause-body">
+          تُقرّ المؤسسة بأن الحدّ الأقصى للتعويض المذكور أعلاه <strong>عادل ومعقول</strong> نظراً للقيمة الاقتصادية للاشتراك ولطبيعة الخدمة. توافق المؤسسة صراحةً على أن أي مطالبة تتجاوز هذا الحدّ تُعدّ <strong>باطلة وغير قابلة للتنفيذ</strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>17</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 20: INDEMNIFICATION ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 20 · 18</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">20</div>
+        <div class="clause-title">التعويض المتبادل من المؤسسة<span class="clause-title-en">Indemnification</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">20.1 التزام التعويض</div>
+        <div class="sub-clause-body">
+          تتعهّد المؤسسة تعهّداً صريحاً وغير قابل للنقض بـ:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li><strong>الدفاع</strong> عن الإدارة + مالكها + موظفيها + مستشاريها (يُشار إليهم مجتمعين بـ "الأطراف المُعَوَّضة") في أي دعوى أو مطالبة أو إجراء قانوني.</li>
+            <li><strong>التعويض الكامل</strong> للأطراف المُعَوَّضة عن جميع الخسائر، الأضرار، الالتزامات، الغرامات، المصاريف، أتعاب المحاماة، والتسويات.</li>
+            <li><strong>حماية</strong> الأطراف المُعَوَّضة من أي مسؤولية بسبب أي مطالبة من طرف ثالث.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">20.2 نطاق التعويض</div>
+        <div class="sub-clause-body">
+          يشمل التزام التعويض، على سبيل المثال لا الحصر، أي مطالبة تنشأ عن:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>إصابة أو ضرر يلحق بطفل أو شخص داخل المؤسسة أو في خدماتها.</li>
+            <li>إخلال المؤسسة أو موظفيها بأي قانون أو لائحة كويتية.</li>
+            <li>محتوى نشرته المؤسسة (عروض، صور، فيديوهات، تعليقات).</li>
+            <li>انتهاك حقوق الملكية الفكرية لطرف ثالث.</li>
+            <li>خرق المؤسسة لخصوصية العملاء.</li>
+            <li>خرق المؤسسة لشروط هذه الاتفاقية.</li>
+            <li>إخلال موظفي المؤسسة أو مدرائها أو متعاقديها.</li>
+            <li>عدم سريان ترخيص المؤسسة أو تزويره.</li>
+            <li>أي ادّعاء كاذب نشرته المؤسسة في إعلاناتها.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">20.3 إجراءات التعويض</div>
+        <div class="sub-clause-body">
+          عند علم الإدارة بأي مطالبة:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>تخطر الإدارة المؤسسة خطّياً.</li>
+            <li>تتولّى المؤسسة الدفاع <strong>على نفقتها</strong> بمحامين مقبولين من الإدارة.</li>
+            <li>يحقّ للإدارة المشاركة في الدفاع على نفقتها الخاصّة.</li>
+            <li>لا يحقّ للمؤسسة قبول أي تسوية تُلزم الإدارة بدون موافقتها الخطّية.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">20.4 الاستمرار بعد إنهاء العقد</div>
+        <div class="sub-clause-body">
+          يبقى التزام التعويض <strong>سارياً ونافذاً</strong> حتى بعد انتهاء أو إنهاء هذه الاتفاقية بأي سبب وبدون حدّ زمني.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>18</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 21: DISCLAIMER OF WARRANTIES ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 21 · 19</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">21</div>
+        <div class="clause-title">تنصّل من الضمانات<span class="clause-title-en">Disclaimer of Warranties</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">21.1 الخدمة "كما هي"</div>
+        <div class="sub-clause-body">
+          تُقدَّم الخدمة (التطبيق + المنصّة + جميع الميزات) <strong>"كما هي" (As Is) و"كما تتوفّر" (As Available)</strong> بدون أي ضمان من أي نوع، صريح أو ضمني.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">21.2 إخلاء صريح من الضمانات</div>
+        <div class="sub-clause-body">
+          تتنصّل الإدارة صراحةً من جميع الضمانات، بما في ذلك على سبيل المثال لا الحصر:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>ضمان <strong>الصلاحية للأغراض التجارية</strong> (Merchantability).</li>
+            <li>ضمان <strong>الملاءمة لغرض معيّن</strong> (Fitness for Particular Purpose).</li>
+            <li>ضمان <strong>عدم انتهاك حقوق الغير</strong> (Non-Infringement).</li>
+            <li>ضمان <strong>استمرارية الخدمة بدون انقطاع</strong>.</li>
+            <li>ضمان <strong>خلوّ الخدمة من الأخطاء أو الفيروسات</strong>.</li>
+            <li>ضمان <strong>توافق الخدمة مع جميع الأجهزة</strong>.</li>
+            <li>ضمان <strong>دقّة المعلومات أو حداثتها</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">21.3 لا ضمان للنتائج التجارية</div>
+        <div class="sub-clause-body">
+          تُقرّ المؤسسة وتوافق صراحةً بأن الإدارة <strong>لا تضمن</strong>:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>عدد عملاء أو مشترين معيّن.</li>
+            <li>عدد أكواد مباعة معيّن.</li>
+            <li>تحقيق أي إيرادات أو أرباح.</li>
+            <li>ظهور المؤسسة في موقع معيّن في نتائج البحث.</li>
+            <li>تحقيق أي تقييمات إيجابية.</li>
+            <li>نموّ أعمال المؤسسة بأي نسبة.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">21.4 لا تشكّل استشارة مهنية</div>
+        <div class="sub-clause-body">
+          الخدمة هي منصّة تقنية فقط. الإدارة <strong>لا تُقدّم</strong> استشارات قانونية، مالية، تجارية، أو إدارية. لا تتحمّل الإدارة أي مسؤولية عن قرارات الأعمال التي تتّخذها المؤسسة بناءً على استخدامها للخدمة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">21.5 إخلاء عام</div>
+        <div class="sub-clause-body">
+          إلى أقصى حدّ يسمح به القانون الكويتي، تُخلي الإدارة مسؤوليتها عن أي ضمان غير منصوص عليه صراحةً في هذه الاتفاقية.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>19</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 22: SERVICE AVAILABILITY ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 22 · 20</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">22</div>
+        <div class="clause-title">توفّر الخدمة وعدم ضمانها<span class="clause-title-en">Service Availability</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">22.1 لا ضمان للجاهزية الكاملة</div>
+        <div class="sub-clause-body">
+          تسعى الإدارة جاهدة لتوفير الخدمة بشكل مستمرّ، <strong>لكنها لا تضمن جاهزية بنسبة 100%</strong>. الإدارة لا تتحمّل أي مسؤولية عن: توقّفات الخدمة المؤقّتة أو المستمرّة، بطء الأداء، فقدان البيانات بسبب أعطال تقنية، عدم القدرة على الوصول للخدمة، أو أي خسارة مالية أو تجارية ناتجة عن ذلك.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">22.2 الصيانة المُجدوَلة وغير المُجدوَلة</div>
+        <div class="sub-clause-body">
+          يحقّ للإدارة في أي وقت <strong>وبدون إشعار مسبق</strong>: إجراء صيانة مُجدوَلة أو طارئة، تعطيل الخدمة جزئياً أو كلياً، إجراء تحديثات قد تسبّب توقّفاً مؤقّتاً، أو تعديل/إزالة أي ميزة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">22.3 الأحداث خارج السيطرة</div>
+        <div class="sub-clause-body">
+          لا تتحمّل الإدارة أي مسؤولية عن توقّفات بسبب أحداث خارجة عن إرادتها: انقطاع الإنترنت، أعطال شركات الاتصالات، أعطال خدمات الاستضافة الخارجية، انقطاع الكهرباء، أحداث طبيعية، حروب، أوبئة، أو قرارات حكومية. (راجع البند 22.5 للاختراقات الإلكترونية).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">22.4 لا التزام بالنسخ الاحتياطي</div>
+        <div class="sub-clause-body">
+          رغم أن الإدارة تتّخذ إجراءات معقولة لحماية البيانات، فإنها <strong>لا تضمن</strong> عدم فقدان البيانات. على المؤسسة أن تحتفظ بنسخ احتياطية من بياناتها المهمّة بشكل مستقلّ.
+        </div>
+      </div>
+
+      <div class="sub-clause" style="background: var(--gold-pale); border-right-color: var(--gold-bright);">
+        <div class="sub-clause-title">22.5 معايير الأمان وإخلاء المسؤولية عن الاختراق ⭐</div>
+        <div class="sub-clause-body">
+          تلتزم الإدارة بتطبيق <strong>أعلى معايير الحماية الإلكترونية</strong> (تشفير، 2FA، حماية من DDoS، تحديثات أمنية دورية، Audit Logs، 26+ طبقة حماية فعلية). <strong>ومع ذلك، لا تضمن الإدارة عدم وقوع اختراق إلكتروني.</strong> في حال وقوع اختراق رغم اتّخاذ كل الاحتياطات المعقولة:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>لا تتحمّل الإدارة <strong>أي مسؤولية</strong> عن البيانات المسرّبة أو التالفة.</li>
+            <li>لا تُلزم الإدارة بأي تعويض للمؤسسات أو العملاء.</li>
+            <li>لا تتحمّل أي خسائر مالية أو سمعة ناتجة عن الاختراق.</li>
+            <li>الاختراقات الإلكترونية <strong>لا تُعدّ إخلالاً تعاقدياً</strong> من الإدارة.</li>
+          </ul>
+          <strong style="display: block; margin-top: 1.5mm;">التزامات الإدارة عند اكتشاف اختراق:</strong> الإبلاغ خلال 72 ساعة، اتّخاذ إجراءات فورية للحدّ من الضرر، التعاون مع الجهات المختصّة، إعادة تأمين النظام.
+        </div>
+      </div>
+
+      <div class="sub-clause" style="background: var(--gold-pale); border-right-color: var(--gold-bright);">
+        <div class="sub-clause-title">22.6 معاملة أيام الصيانة — حسن النيّة ⭐</div>
+        <div class="sub-clause-body">
+          في إطار حسن النيّة وتقديراً للمؤسسات، تتعهّد الإدارة بأن:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>أيام الصيانة المُجدوَلة وغير المُجدوَلة <strong>لا تُحتسب من فترة الاشتراك الفعلية</strong> للمؤسسة.</li>
+            <li>تُمدَّد فترة الاشتراك تلقائياً بمقدار مدّة الصيانة الفعلية.</li>
+            <li>هذا التعويض الزمني <strong>بدلاً عن</strong> أي تعويض مالي — لا يحقّ المطالبة بتعويض إضافي.</li>
+            <li>التحديد النهائي لمدّة الصيانة يكون وفقاً للتقدير المنفرد للإدارة (سجلاتها هي المرجع).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>20</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 23 + 24 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 23-24 · 21</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">23</div>
+        <div class="clause-title">الخدمات الخارجية<span class="clause-title-en">Third-Party Services</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">23.1 الاعتماد على أطراف ثالثة</div>
+        <div class="sub-clause-body">
+          تستخدم الإدارة خدمات أطراف ثالثة لتشغيل التطبيق (Cloudinary للصور، Twilio للواتساب، KNET للدفع، Railway للاستضافة، Firebase للإشعارات، Resend للإيميل، إلخ).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">23.2 لا مسؤولية عن أعطال الخدمات الخارجية</div>
+        <div class="sub-clause-body">
+          الإدارة <strong>لا تتحمّل أي مسؤولية</strong> عن:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>أعطال أو توقّف الخدمات الخارجية.</li>
+            <li>خطأ أو تقصير من أي طرف ثالث.</li>
+            <li>كيفية تعامل الأطراف الثالثة مع البيانات.</li>
+            <li>تغيير أسعار الأطراف الثالثة.</li>
+            <li>إنهاء الأطراف الثالثة لخدماتها.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">23.3 حق التغيير</div>
+        <div class="sub-clause-body">
+          يحقّ للإدارة في أي وقت تغيير مزوّدي الخدمات الخارجية بدون إشعار، طالما أن جودة الخدمة الإجمالية تبقى متماثلة.
+        </div>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">24</div>
+        <div class="clause-title">مسؤولية المؤسسة عن مستخدميها<span class="clause-title-en">User Liability</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">24.1 مسؤولية شاملة</div>
+        <div class="sub-clause-body">
+          تتحمّل المؤسسة <strong>المسؤولية الكاملة والمطلقة</strong> عن جميع أفعال:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>موظفيها (دائمين، مؤقّتين، متطوّعين).</li>
+            <li>مدرائها وممثّليها القانونيين.</li>
+            <li>متعاقديها من الباطن.</li>
+            <li>أي شخص يستخدم حسابها (سواء بإذن أو بدون إذن).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">24.2 أمن الحساب</div>
+        <div class="sub-clause-body">
+          المؤسسة مسؤولة عن حماية بيانات الدخول، عدم مشاركتها، إخطار الإدارة فوراً عند أي اشتباه باختراق، وتحمّل تبعات أي استخدام غير مُصرّح به.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">24.3 لا مسؤولية على الإدارة</div>
+        <div class="sub-clause-body">
+          الإدارة <strong>لا تتحمّل</strong> أي مسؤولية عن: ما يفعله موظفو المؤسسة، اختراق حسابها بسبب إهمالها، أو أي محتوى/إجراء قام به مستخدم باسم المؤسسة.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>21</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 25: CHILD SAFETY ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 25 · 22</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">25</div>
+        <div class="clause-title">حماية الأطفال — البند الخاص<span class="clause-title-en">Child Safety — Special Clause</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">25.1 المنصّة كوسيط فقط</div>
+        <div class="sub-clause-body">
+          الخدمة هي <strong>منصّة رقمية وسيطة</strong> تربط الأهالي بالمؤسسات. الإدارة <strong>لا تشارك</strong> بأي شكل في:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>العمليات الفعلية للمؤسسات.</li>
+            <li>إدارة الأطفال أو الإشراف عليهم.</li>
+            <li>التدريب أو التعليم.</li>
+            <li>توفير الطعام أو النقل.</li>
+            <li>أي نشاط بدني داخل المؤسسة.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="critical-box">
+        <span class="icon">🛡️</span> <strong>25.2 المسؤولية المطلقة على المؤسسة:</strong> المؤسسة تتحمّل <strong>المسؤولية القانونية الكاملة والمطلقة</strong> عن سلامة الأطفال، جميع الأضرار الجسدية أو النفسية أو المالية، أي حادث أو إصابة أو وفاة (لا سمح الله) داخل المؤسسة أو بسببها، وأي فعل غير مشروع من موظفيها.
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">25.3 إخلاء كامل لمسؤولية الإدارة</div>
+        <div class="sub-clause-body">
+          تُقرّ المؤسسة وتوافق صراحةً بأن:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>الإدارة <strong>لن تتحمّل تحت أي ظرف</strong> أي مسؤولية مدنية أو جنائية أو إدارية عن أي ضرر يلحق بالأطفال.</li>
+            <li>المؤسسة هي <strong>الجهة الوحيدة</strong> التي يحقّ مقاضاتها في حال وقوع ضرر للطفل.</li>
+            <li>لا يحقّ لأي ولي أمر أو طفل المطالبة من الإدارة بأي تعويض عن أي ضرر متعلّق بالخدمات الفعلية للمؤسسة.</li>
+            <li>تتعهّد المؤسسة بإبلاغ أولياء الأمور أن التطبيق منصّة وسيطة فقط.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">25.4 التزامات وقائية</div>
+        <div class="sub-clause-body">
+          تلتزم المؤسسة بـ: فحص السجلّ الجنائي لجميع موظفيها، شهادات صحّية معتمدة، نسبة الإشراف وفقاً للأنظمة، كاميرات مراقبة، التأمين الصحّي الإلزامي، تأمين مسؤولية مدنية، الإسعافات الأولية، بروتوكول طوارئ مكتوب.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">25.5 الإبلاغ</div>
+        <div class="sub-clause-body">
+          في حال وقوع أي حادث: المؤسسة تُبلغ الإدارة فوراً، تُبلغ الجهات المختصّة وفقاً للقانون الكويتي، ولا يحقّ لها استخدام شعار التطبيق في التعامل مع الإعلام.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>22</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 26: CLASS ACTION WAIVER ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 26 · 23</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">26</div>
+        <div class="clause-title">التنازل عن الدعاوى الجماعية + التقادم<span class="clause-title-en">Class Action Waiver &amp; Limitations</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">26.1 الدعاوى الفردية فقط</div>
+        <div class="sub-clause-body">
+          أي نزاع بين الإدارة والمؤسسة يُحلّ على أساس <strong>فردي فقط</strong>. تتنازل المؤسسة صراحةً عن:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>الانضمام إلى أي <strong>دعوى جماعية</strong> ضد الإدارة.</li>
+            <li>التقدّم بمطالبات بصفة "ممثّل عن مجموعة" أو "مدّعي عام خاصّ".</li>
+            <li>الانضمام إلى تحكيم جماعي.</li>
+            <li>التنسيق مع مؤسسات أخرى لرفع دعاوى مشتركة.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">26.2 التقادم القصير</div>
+        <div class="sub-clause-body">
+          أي مطالبة قانونية يجب رفعها خلال <strong>6 أشهر</strong> من تاريخ علم المؤسسة بالواقعة. بعد هذه المدّة، تكون المطالبة <strong>متقادمة وغير قابلة للتنفيذ</strong> بشكل قاطع.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">26.3 الإخطار قبل التقاضي</div>
+        <div class="sub-clause-body">
+          قبل رفع أي دعوى، يجب على المؤسسة:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>إرسال إخطار خطّي رسمي للإدارة قبل <strong>60 يوماً</strong> على الأقلّ.</li>
+            <li>المشاركة في <strong>محاولة تسوية ودّية</strong> لمدة 30 يوماً.</li>
+            <li>اللجوء إلى <strong>الوساطة</strong> قبل التقاضي إذا اقترحتها الإدارة.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">26.4 الالتزام التعاقدي</div>
+        <div class="sub-clause-body">
+          هذه القيود ليست خياراً، بل <strong>التزامات تعاقدية ملزمة</strong> قبلتها المؤسسة بتوقيعها على الاتفاقية. أي محاولة للتحايل عليها تُعدّ خرقاً جسيماً.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">26.5 رسوم التقاضي</div>
+        <div class="sub-clause-body">
+          في حال رفع المؤسسة دعوى قضائية وحُكِم لصالح الإدارة، تتحمّل المؤسسة <strong>كامل الرسوم القضائية وأتعاب المحاماة</strong> للإدارة.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>23</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 27 + 28 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 27-28 · 24</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">27</div>
+        <div class="clause-title">علاقة العمل المستقلة<span class="clause-title-en">Independent Relationship</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">27.1 لا شراكة</div>
+        <div class="sub-clause-body">
+          العلاقة بين الإدارة والمؤسسة هي <strong>علاقة طرفين مستقلّين</strong>. لا تنشأ عن هذه الاتفاقية أي:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>شراكة (Partnership).</li>
+            <li>وكالة (Agency).</li>
+            <li>مشروع مشترك (Joint Venture).</li>
+            <li>علاقة موظّف-صاحب عمل (Employment).</li>
+            <li>علاقة امتياز (Franchise).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">27.2 لا صلاحية تمثيل</div>
+        <div class="sub-clause-body">
+          لا تملك المؤسسة أي صلاحية لـ: التحدّث باسم الإدارة، إلزامها بأي التزام تجاه طرف ثالث، استخدام شعار الإدارة بدون إذن، أو الادّعاء بأنها "شريك رسمي".
+        </div>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">28</div>
+        <div class="clause-title">البنود القانونية المعيارية<span class="clause-title-en">Boilerplate Provisions</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">28.1 قابلية الانفصال (Severability)</div>
+        <div class="sub-clause-body">
+          إذا قُضي ببطلان أي بند، فإن البنود الأخرى تبقى نافذة وسارية بكامل قوّتها.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">28.2 الاتفاقية الكاملة (Entire Agreement)</div>
+        <div class="sub-clause-body">
+          هذه الاتفاقية + الباقات + الوثائق المرفقة + سياسة الخصوصية تُمثّل <strong>الاتفاقية الكاملة</strong>، وتلغي جميع الاتفاقيات والوعود الشفهية والكتابية السابقة. لا اعتراف بأي وعد أو ضمان لم يُذكر صراحةً.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">28.3 عدم التنازل (No Waiver)</div>
+        <div class="sub-clause-body">
+          عدم ممارسة الإدارة لأي حق <strong>لا يُعدّ تنازلاً</strong> عنه في المستقبل.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">28.4 عدم التنازل عن العقد (No Assignment)</div>
+        <div class="sub-clause-body">
+          لا يحقّ للمؤسسة التنازل عن هذه الاتفاقية أو بيع حسابها أو نقل ملكية الاشتراك بدون موافقة الإدارة الخطّية. يحقّ للإدارة التنازل عن الاتفاقية لأي طرف (بما في ذلك في حال بيع التطبيق أو الاندماج) دون الحاجة لموافقة المؤسسة.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">28.5 اللغة الحاكمة</div>
+        <div class="sub-clause-body">
+          النسخة العربية هي <strong>النسخة الحاكمة قانونياً</strong>. أي ترجمة لأي لغة أخرى للراحة فقط، وفي حال أي تعارض، النسخة العربية تسود.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">28.6 التواقيع الإلكترونية</div>
+        <div class="sub-clause-body">
+          النقر على زرّ "أوافق على الشروط والأحكام" أو إكمال عملية التسجيل في التطبيق يُعدّ <strong>توقيعاً إلكترونياً ملزماً قانونياً</strong> بموجب قانون المعاملات الإلكترونية الكويتي رقم 20 لسنة 2014.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>24</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 29 + 30 ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSES 29-30 · 25</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">29</div>
+        <div class="clause-title">مكافحة التشهير<span class="clause-title-en">Anti-Defamation</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">29.1 منع الإساءة العلنية</div>
+        <div class="sub-clause-body">
+          تتعهّد المؤسسة بأن لا:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>تنشر أي ادّعاءات كاذبة عن التطبيق على وسائل التواصل أو الإعلام.</li>
+            <li>تشهّر بالإدارة أو بمالك التطبيق.</li>
+            <li>تستخدم اسم التطبيق في حملات مضادّة.</li>
+            <li>تشجّع مؤسسات أخرى على مقاطعة التطبيق.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">29.2 العقوبة</div>
+        <div class="sub-clause-body">
+          أي مخالفة لهذا البند تُعدّ:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>مخالفة جسيمة تستوجب الإنهاء الفوري.</li>
+            <li>موجبة لتعويض <strong>لا يقلّ عن 5,000 د.ك</strong> للإدارة.</li>
+            <li>سبب لإحالة قانونية إلى المحاكم الكويتية بتهمة التشهير.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">29.3 الاستمرار بعد الإنهاء</div>
+        <div class="sub-clause-body">
+          هذا البند يبقى نافذاً لمدة <strong>5 سنوات</strong> بعد إنهاء الاتفاقية.
+        </div>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">30</div>
+        <div class="clause-title">القابلية للنفاذ والإقرار النهائي<span class="clause-title-en">Enforceability &amp; Final Acknowledgment</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">30.1 الإقرار بالعدالة</div>
+        <div class="sub-clause-body">
+          تُقرّ المؤسسة بأن جميع بنود هذه الاتفاقية، خاصةً البنود 19، 20، 21، 22، 25، 26، تمّ التفاوض عليها بشكل جوهري، وأنها قرأتها بعناية وفهمتها بالكامل، وأنها <strong>عادلة ومعقولة وقابلة للتنفيذ</strong>.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">30.2 لا حقّ في الإنكار</div>
+        <div class="sub-clause-body">
+          المؤسسة تتنازل صراحةً عن حقّها في الادّعاء لاحقاً بأن: لم تقرأ الشروط، لم تفهمها، وقّعت تحت ضغط، أو أن الشروط غير عادلة (Unconscionable).
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">30.3 المراجعة المستقلّة</div>
+        <div class="sub-clause-body">
+          تُقرّ المؤسسة بأنه كان لديها فرصة كاملة لـ: مراجعة الاتفاقية مع محاميها الخاص، التفاوض على أي بند قبل التوقيع، رفض الاتفاقية وعدم التسجيل. وبتوقيعها فإنها <strong>اختارت طوعاً</strong> الموافقة على جميع البنود.
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">30.4 الأسبقية</div>
+        <div class="sub-clause-body">
+          في حال أي تعارض بين بنود هذه الاتفاقية، <strong>بنود الحماية القانونية (19-30) لها الأسبقية</strong> على البنود التشغيلية (1-18).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>25</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.2</div>
+  </div>
+</div>
+
+<!-- ========== CLAUSE 31: EXCLUSIVE INSTITUTION LIABILITY FOR OFFERS ========== -->
+<div class="page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">CLAUSE 31 · 26</div>
+  </div>
+
+  <div class="page-content">
+    <div class="clause">
+      <div class="clause-header protection">
+        <div class="clause-num">31</div>
+        <div class="clause-title">المسؤولية الحصرية للمؤسسة عن عروضها<span class="clause-title-en">Exclusive Institution Liability for Offers</span></div>
+        <div class="protection-badge">PROTECTION</div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">31.1 طبيعة الكود — نموذج تجاري ثلاثي الأطراف</div>
+        <div class="sub-clause-body">
+          التطبيق هو <strong>منصّة وسيطة رقمية</strong> تعمل وفقاً لنموذج ثلاثي الأطراف:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>العميل يدفع للتطبيق <strong>1 د.ك فقط</strong> مقابل الكود (قسيمة رقمية للاستفادة من عرض المؤسسة).</li>
+            <li>هذه القيمة (1 د.ك) رسم تشغيل المنصّة، و<strong>100% منها للتطبيق</strong>.</li>
+            <li>المؤسسة هي <strong>الجهة الوحيدة</strong> المسؤولة عن تقديم <strong>الخدمة الفعلية + الخصم + المزايا</strong> للعميل.</li>
+            <li>التطبيق <strong>لا يتقاضى</strong> أي نسبة من قيمة الخدمة الفعلية ولا يتدخّل في تنفيذها.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-clause" style="background: var(--gold-pale); border-right-color: var(--gold-bright);">
+        <div class="sub-clause-title">31.2 المسؤولية المطلقة للمؤسسة عن عروضها ⭐</div>
+        <div class="sub-clause-body">
+          تتحمّل المؤسسة <strong>المسؤولية الكاملة والمطلقة</strong> عن جميع العروض والمزايا والخصومات والمميزات التي تنشرها في التطبيق:
+          <ul class="clean-list" style="margin-top: 1.5mm;">
+            <li>الالتزام التامّ والدقيق بكل بند من العرض كما نُشر للعميل.</li>
+            <li><strong>عدم التراجع</strong> عن العرض بعد بيع الأكواد.</li>
+            <li><strong>عدم الإخلال</strong> بأي شرط أو فائدة وعدت بها للعميل.</li>
+            <li>تطبيق الخصم الكامل بدون استثناءات أو شروط مخفيّة.</li>
+            <li>توفير الجودة الموعودة في الإعلان بدقّة.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="critical-box">
+        <span class="icon">🛡️</span> <strong>31.3 الإخلاء الكامل لمسؤولية الإدارة:</strong> الإدارة <strong>منصّة عرض رقمي فقط</strong>. في حال إخلال المؤسسة بأي عرض، لا تتحمّل الإدارة <strong>أي جزء من الخطأ أو المسؤولية</strong>، والعميل لا يحقّ له مطالبة الإدارة بأي تعويض. المؤسسة هي <strong>الجهة الوحيدة المُساءلة</strong> أمام العميل والجهات الرقابية.
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">31.4 العقوبات على الإخلال بالعروض</div>
+        <div class="sub-clause-body">
+          <table class="fine-table">
+            <thead>
+              <tr><th>المخالفة</th><th>العقوبة</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>الأولى</td><td>تعويض كامل للعميل + تحذير + خصم 25 د.ك</td></tr>
+              <tr><td>الثانية</td><td>تعويض + إيقاف 14 يوم + خصم 50 د.ك</td></tr>
+              <tr><td>الثالثة</td><td>إنهاء العقد + استبعاد دائم + إحالة قانونية</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="sub-clause">
+        <div class="sub-clause-title">31.5 سجلّ التطبيق هو المرجع الوحيد</div>
+        <div class="sub-clause-body">
+          العرض المعتمد في التطبيق <strong>وقت شراء العميل للكود</strong> هو <strong>المرجع الوحيد</strong> في حال أي خلاف. المؤسسة ملزمة بهذا السجلّ، ولا يحقّ لها الاحتجاج بأي اتفاق شفهي منفصل، وعد لاحق غير موثّق، أو تعديل بعد بيع الأكواد.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>26</span> / 30</div>
+    <div>Terms &amp; Conditions · v2.1</div>
+  </div>
+</div>
+
+<!-- ========== FINAL ACKNOWLEDGMENT + SIGNATURE ========== -->
+<div class="page signature-page">
+  <div class="page-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div class="brand-text">كويت كيدز · Kuwait Kids — الشروط والأحكام</div>
+    </div>
+    <div class="meta">FINAL · 27</div>
+  </div>
+
+  <div class="signature-content">
+    <div class="eyebrow">الإقرار النهائي</div>
+    <h1 class="section-title">الإقرار والتعهّد</h1>
+    <div class="gold-rule center"></div>
+
+    <p style="font-family: 'Tajawal', sans-serif; font-size: 11pt; color: var(--ivory); line-height: 1.85; margin-bottom: 5mm;">
+      بقبول الممثّل القانوني للمؤسسة هذه الشروط (31 بنداً)، فإنه يُقرّ ويتعهّد صراحة بـ:
+    </p>
+
+    <ul class="commitment-list">
+      <li><span class="check">✓</span> كونه مُخوَّلاً قانونياً للتعاقد نيابةً عن المؤسسة.</li>
+      <li><span class="check">✓</span> صحّة جميع البيانات والمستندات المُقدَّمة.</li>
+      <li><span class="check">✓</span> الاطّلاع التامّ على الشروط الـ 31 وفهمها بالكامل.</li>
+      <li><span class="check">✓</span> الالتزام بكافة البنود دون استثناء.</li>
+      <li><span class="check">✓</span> الإقرار ببنود الحماية القانونية (19-31) وقابليتها للنفاذ.</li>
+      <li><span class="check">✓</span> الموافقة على حدّ المسؤولية المالية والتقدير المنفرد للإدارة.</li>
+      <li><span class="check">✓</span> المسؤولية الحصرية عن عروضها أمام العملاء (البند 31).</li>
+      <li><span class="check">✓</span> الموافقة على المساءلة القانونية أمام المحاكم الكويتية.</li>
+    </ul>
+
+    <div class="legal-stamp">
+      <div class="name-ar">كويت كيدز</div>
+      <div class="name-en">Kuwait Kids</div>
+      <div class="legal-line">الإصدار القانوني: <strong>2.1</strong></div>
+      <div class="legal-line">آخر تحديث: <strong>9 مايو 2026</strong></div>
+      <div class="legal-line">عدد البنود: <strong>31 بنداً</strong></div>
+      <div class="legal-line" style="margin-top: 2mm;">اللغة المُعتمدة قانونياً: <strong>العربية</strong></div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div>www.kuwaitkidsapp.com</div>
+    <div class="page-num"><span>27</span> / 30</div>
+    <div>END OF DOCUMENT</div>
+  </div>
+</div>
+
+</body>
+</html>

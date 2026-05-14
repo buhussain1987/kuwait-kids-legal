@@ -1,0 +1,12 @@
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Temp
+*.tmp
+*.bak
